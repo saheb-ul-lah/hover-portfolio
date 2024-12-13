@@ -9,7 +9,7 @@ import SlideTabs from './components/SlideTabs';
 import BouncyCardsFeatures from './components/BouncyCardsFeatures';
 // import CutoutTextLoader from './components/CutoutTextLoader'
 // import FloatingPhone from './components/FloatingPhone'
-import ParticleRing from './components/ParticleRing'
+// import ParticleRing from './components/ParticleRing'
 import VelocityText from './components/VelocityText'
 import TextParallaxContent from './components/TextParallaxContent'
 import SpringModal from './components/SpringModal'
