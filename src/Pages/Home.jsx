@@ -9,6 +9,7 @@ import { SiSpacex } from "react-icons/si";
 import { FiArrowRight, FiMapPin } from "react-icons/fi";
 import { useRef } from "react";
 
+
 const SmoothScrollHero = () => {
     return (
         <div className="bg-zinc-950">
@@ -21,9 +22,9 @@ const SmoothScrollHero = () => {
                     //   syncTouch: true,
                 }}
             >
-                <Nav />
+                {/* <Nav /> */}
                 <Hero />
-                <Schedule />
+                {/* <Schedule /> */}
             </ReactLenis>
         </div>
     );
@@ -134,6 +135,7 @@ const ParallaxImages = () => {
     );
 };
 
+// eslint-disable-next-line react/prop-types
 const ParallaxImg = ({ className, alt, src, start, end }) => {
     const ref = useRef(null);
 
@@ -184,6 +186,7 @@ const Schedule = () => {
     );
 };
 
+// eslint-disable-next-line react/prop-types
 const ScheduleItem = ({ title, date, location }) => {
     return (
         <motion.div

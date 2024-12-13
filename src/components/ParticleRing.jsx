@@ -11,7 +11,7 @@ const ParticleRing = () => {
           position: [10, -7.5, -5],
         }}
         style={{ height: "100vh" }}
-        className="bg-slate-900"
+        className="bg-neutral-950"
       >
         <OrbitControls maxDistance={20} minDistance={10} />
         <directionalLight />

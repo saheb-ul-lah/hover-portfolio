@@ -1,36 +1,84 @@
 import './App.css';
-import { useState, useEffect } from 'react';
-import CutoutTextLoader from './components/CutoutTextLoader'; // Ensure the loader component is imported
-import TextParallaxContent from './components/TextParallaxContent';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Pages/Home';
+import Works from './Pages/Works';
+import Milestones from './Pages/Milestones';
+import Bio from './Pages/Bio';
+import Upcoming from './Pages/Upcoming';
+import SlideTabs from './components/SlideTabs';
+import BouncyCardsFeatures from './components/BouncyCardsFeatures';
+// import CutoutTextLoader from './components/CutoutTextLoader'
+// import FloatingPhone from './components/FloatingPhone'
+import ParticleRing from './components/ParticleRing'
+import VelocityText from './components/VelocityText'
+import TextParallaxContent from './components/TextParallaxContent'
+import SpringModal from './components/SpringModal'
+import HoverImageLinks from './components/HoverImageLinks'
+// import RevealBento from './components/RevealBento'
+
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    // Simulate a loading period
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 3000); // Loader visible for 3 seconds
-
-    return () => clearTimeout(timer); // Cleanup timer on unmount
-  }, []);
-
   return (
-    <>
-      {isLoading ? (
-        <CutoutTextLoader
-          height="450px"
-          background="white"
-          imgUrl="/imgs/random/11.jpg" // Ensure this path points to an actual image
+    <Router>
+      {/* Centralized routing */}
+      <Routes>
+        {/* Each route includes or excludes SlideTabs as required */}
+        <Route
+          path="/"
+          element={
+            <div>
+              {/* <ParticleRing /> */}
+              <Home />
+
+              <HoverImageLinks />
+              <VelocityText />
+              <BouncyCardsFeatures />
+              <TextParallaxContent />
+              <SpringModal />
+              {/* <RevealBento /> */}
+              <SlideTabs />  {/* Always keep it below all adjacent components (otherwise it will be get overlapped by others) */}
+            </div>
+          }
         />
-      ) : (
-        <>
-          <Home />
-          <TextParallaxContent />
-        </>
-      )}
-    </>
+        <Route
+          path="/works"
+          element={
+            <div>
+              <Works />
+              <SlideTabs />  {/* Always keep it below all adjacent components (otherwise it will be get overlapped by others) */}
+            </div>
+          }
+        />
+        <Route
+          path="/milestones"
+          element={
+            <div>
+              <Milestones />
+              <SlideTabs />  {/* Always keep it below all adjacent components (otherwise it will be get overlapped by others) */}
+            </div>
+          }
+        />
+        <Route
+          path="/bio"
+          element={
+            <div>
+              <Bio />
+              <ParticleRing />
+              <SlideTabs />  {/* Always keep it below all adjacent components (otherwise it will be get overlapped by others) */}
+            </div>
+          }
+        />
+        <Route
+          path="/upcoming"
+          element={
+            <div>
+              <Upcoming />
+              <SlideTabs />  {/* Always keep it below all adjacent components (otherwise it will be get overlapped by others) */}
+            </div>
+          }
+        />
+      </Routes>
+    </Router>
   );
 }
 
