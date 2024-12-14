@@ -1,7 +1,7 @@
 // import React from 'react'
 import CustomKanban from '../components/CustomKanban'
 
-const upcoming = () => {
+const Upcoming = () => {
   return (
     <>
       <CustomKanban />
@@ -9,4 +9,4 @@ const upcoming = () => {
   )
 }
 
-export default upcoming
+export default Upcoming;

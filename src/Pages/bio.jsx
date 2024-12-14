@@ -1,5 +1,5 @@
 
-const bio = () => {
+const Bio = () => {
   return (
     <>
       <div>bio</div>
@@ -8,4 +8,4 @@ const bio = () => {
   )
 }
 
-export default bio
+export default Bio;
