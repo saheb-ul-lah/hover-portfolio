@@ -9,31 +9,31 @@ const HoverImageLinks = () => {
                 <Link
                     heading="About"
                     subheading="Learn what we do here"
-                    imgSrc="https://mathematical-forum.org/poli3.png"
+                    imgSrc="https://png.pngtree.com/element_our/20200610/ourmid/pngtree-computer-hacker-image_2247730.jpg"
                     href="#"
                 />
                 <Link
                     heading="Clients"
                     subheading="We work with great people"
-                    imgSrc="https://mathematical-forum.org/poli3.png"
+                    imgSrc="https://png.pngtree.com/element_our/20200610/ourmid/pngtree-computer-hacker-image_2247730.jpg"
                     href="#"
                 />
                 <Link
                     heading="Portfolio"
                     subheading="Our work speaks for itself"
-                    imgSrc="https://mathematical-forum.org/poli3.png"
+                    imgSrc="https://png.pngtree.com/element_our/20200610/ourmid/pngtree-computer-hacker-image_2247730.jpg"
                     href="#"
                 />
                 <Link
                     heading="Careers"
                     subheading="We want cool people"
-                    imgSrc="https://mathematical-forum.org/poli3.png"
+                    imgSrc="https://png.pngtree.com/element_our/20200610/ourmid/pngtree-computer-hacker-image_2247730.jpg"
                     href="#"
                 />
                 <Link
                     heading="Fun"
                     subheading="Incase you're bored"
-                    imgSrc="https://mathematical-forum.org/poli3.png"
+                    imgSrc="https://png.pngtree.com/element_our/20200610/ourmid/pngtree-computer-hacker-image_2247730.jpg"
                     href="#"
                 />
             </div>

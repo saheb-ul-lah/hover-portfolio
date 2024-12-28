@@ -18,36 +18,40 @@ const BouncyCardsFeatures = () => {
             </div>
             <div className="mb-4 grid grid-cols-12 gap-4">
                 <BounceCard className="col-span-12 md:col-span-4">
-                    <CardTitle>Do a thing</CardTitle>
+                    <CardTitle>Mathematical Forum</CardTitle>
                     <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-gradient-to-br from-violet-400 to-indigo-400 p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
                         <span className="block text-center font-semibold text-indigo-50">
-                            FEATURE DEMO HERE
+                            A journal platform for Dibrugarh University. <br />
+                            Visit: <a href="https://mathematical-forum.org/" className="underline text-white">mathematical-forum.org</a>
                         </span>
                     </div>
                 </BounceCard>
                 <BounceCard className="col-span-12 md:col-span-8">
-                    <CardTitle>Do another thing</CardTitle>
+                    <CardTitle>Pharmaceutical Society DU</CardTitle>
                     <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-gradient-to-br from-amber-400 to-orange-400 p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
                         <span className="block text-center font-semibold text-orange-50">
-                            FEATURE DEMO HERE
+                            Alumni portal for the Pharmaceutical Department of Dibrugarh University. <br />
+                            Visit: <a href="https://pharmasocietydu.com/" className="underline text-white">pharmasocietydu.com</a>
                         </span>
                     </div>
                 </BounceCard>
             </div>
             <div className="grid grid-cols-12 gap-4">
                 <BounceCard className="col-span-12 md:col-span-8">
-                    <CardTitle>And this too</CardTitle>
+                    <CardTitle>CSJMC Alumni Portal</CardTitle>
                     <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-gradient-to-br from-green-400 to-emerald-400 p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
                         <span className="block text-center font-semibold text-emerald-50">
-                            FEATURE DEMO HERE
+                            A MERN-based alumni platform for CSJMC of Dibrugarh University. <br />
+                            Visit: <a href="https://csjmcalumni.in/" className="underline text-white">csjmcalumni.in</a>
                         </span>
                     </div>
                 </BounceCard>
                 <BounceCard className="col-span-12 md:col-span-4">
-                    <CardTitle>And finally this</CardTitle>
+                    <CardTitle>Excelitest</CardTitle>
                     <div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-gradient-to-br from-pink-400 to-red-400 p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
                         <span className="block text-center font-semibold text-red-50">
-                            FEATURE DEMO HERE
+                            A state-level hackathon-winning project for automating test creation from Excel files. <br />
+                            Visit: <a href="https://excelitest.vercel.app/" className="underline text-white">excelitest.vercel.app</a>
                         </span>
                     </div>
                 </BounceCard>
