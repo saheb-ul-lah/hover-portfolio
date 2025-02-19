@@ -54,11 +54,11 @@ function App() {
               {/* <ParticleRing /> */}
               <Awwards />
               {/* <Home /> */}
-              <MorphingText />
+              {/* <MorphingText /> */}
               {/* <HoverImageLinks /> */}
               {/* <VelocityText /> */}
               {/* <BouncyCardsFeatures /> */}
-              <TextParallaxContent />
+              {/* <TextParallaxContent /> */}
               {/* <SpringModal /> */}
               {/* <RevealBento /> */}
               {/* <SlideTabs />  */}

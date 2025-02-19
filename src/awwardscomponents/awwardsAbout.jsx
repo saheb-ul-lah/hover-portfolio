@@ -34,15 +34,14 @@ const About = () => {
         </p>
 
         <AnimatedTitle
-          title="Disc<b>o</b>ver the world's <br /> largest shared <b>a</b>dventure"
+          title="Hi, I'm S<b>a</b>heb M<b>a</b>nsuri <br /> Buil<b>d</b>ing websites, <br /> with innovation "
           containerClass="mt-5 !text-black text-center"
         />
 
         <div className="about-subtext">
-          <p>The Game of Games begins—your life, now an epic MMORPG</p>
+          <p>I discovered my love for programming 5 years ago</p>
           <p className="text-gray-500">
-            Zentry unites every player from countless games and platforms, both
-            digital and physical, into a unified Play Economy
+            Two years ago, web development opened up a world of creativity for me
           </p>
         </div>
       </div>
@@ -50,7 +49,7 @@ const About = () => {
       <div className="h-dvh w-screen" id="clip">
         <div className="mask-clip-path about-image">
           <img
-            src="img/about.webp"
+            src="img/coding-setup.jpg"
             alt="Background"
             className="absolute left-0 top-0 size-full object-cover"
           />

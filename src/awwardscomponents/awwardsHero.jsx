@@ -7,6 +7,7 @@ import { useEffect, useRef, useState } from "react";
 import Button from "./awwardsButton";
 import VideoPreview from "./awwardsVideoPreview";
 
+import Loader from "./awwardsLoader.tsx"
 gsap.registerPlugin(ScrollTrigger);
 
 const Hero = () => {
@@ -85,14 +86,16 @@ const Hero = () => {
   return (
     <div className="relative h-dvh w-screen overflow-x-hidden">
       {loading && (
-        <div className="flex-center absolute z-[100] h-dvh w-screen overflow-hidden bg-violet-50">
-          {/* https://uiverse.io/G4b413l/tidy-walrus-92 */}
-          <div className="three-body">
-            <div className="three-body__dot"></div>
-            <div className="three-body__dot"></div>
-            <div className="three-body__dot"></div>
-          </div>
+        <div className="flex-center absolute z-[100] h-dvh w-screen overflow-hidden bg-white">
+          <Loader />
         </div>
+        // <div className="flex-center absolute z-[100] h-dvh w-screen overflow-hidden bg-violet-50">
+        //   <div className="three-body">
+        //     <div className="three-body__dot"></div>
+        //     <div className="three-body__dot"></div>
+        //     <div className="three-body__dot"></div>
+        //   </div>
+        // </div>
       )}
 
       <div
@@ -114,6 +117,7 @@ const Hero = () => {
                   id="current-video"
                   className="size-64 origin-center scale-150 object-cover object-center"
                   onLoadedData={handleVideoLoad}
+                  disablePictureInPicture
                 />
               </div>
             </VideoPreview>
@@ -127,6 +131,7 @@ const Hero = () => {
             id="next-video"
             className="absolute-center invisible absolute z-20 size-64 object-cover object-center"
             onLoadedData={handleVideoLoad}
+            disablePictureInPicture
           />
           <video
             src={getVideoSrc(
@@ -137,21 +142,43 @@ const Hero = () => {
             muted
             className="absolute left-0 top-0 size-full object-cover object-center"
             onLoadedData={handleVideoLoad}
+            disablePictureInPicture
           />
         </div>
 
-        <h1 className="special-font hero-heading absolute bottom-5 right-5 z-40 text-blue-75">
+        <h1
+          className="special-font hero-heading absolute bottom-5 right-5 z-40 text-transparent"
+          style={{
+            color: "white",
+            textShadow:
+              "-2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black",
+          }}
+        >
           <b>E</b>xperie<b>n</b>ce
         </h1>
 
         <div className="absolute left-0 top-0 z-40 size-full">
           <div className="mt-24 px-5 sm:px-10">
-            <h1 className="special-font hero-heading text-blue-100">
+            <h1
+              className="special-font hero-heading text-transparent"
+              style={{
+                color: "white",
+                textShadow:
+                  "-2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black",
+              }}
+            >
               redefi<b>n</b>in<b>g</b>
             </h1>
 
-            <p className="mb-5 max-w-64 font-robert-regular text-blue-100">
-              Unleash creativity, <br /> crafting ❄ stunning interfaces ❄
+            <p
+              className="mb-5 text-lg lg:text-2xl max-w-64 font-robert-regular text-blue-100"
+              style={{
+                color: "white",
+                textShadow:
+                  "-2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black",
+              }}
+            >
+              ❄ Unleash creativity, <br /> crafting stunning interfaces ❄
             </p>
 
             <Button
@@ -164,8 +191,14 @@ const Hero = () => {
         </div>
       </div>
 
-      <h1 className="special-font hero-heading absolute bottom-5 right-5 text-black">
-      <b>E</b>xperie<b>n</b>ce
+      <h1
+        className="special-font  hero-heading absolute bottom-5 right-5 text-transparent"
+        style={{
+          color: "white",
+          textShadow:
+            "-2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black",
+        }}>
+        <b>E</b>xperie<b>n</b>ce
       </h1>
     </div>
   );
