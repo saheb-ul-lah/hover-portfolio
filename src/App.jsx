@@ -53,7 +53,7 @@ function App() {
             <div>
               {/* <ParticleRing /> */}
               <Awwards />
-              <Home />
+              {/* <Home /> */}
               <MorphingText />
               {/* <HoverImageLinks /> */}
               {/* <VelocityText /> */}
