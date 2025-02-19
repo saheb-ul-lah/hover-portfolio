@@ -20,6 +20,11 @@ import heroImg2 from "../assets/images/scroll-up-images/csjmc-alumni-hero.png";
 import heroImg3 from "../assets/images/scroll-up-images/pharma-society-hero.png";
 import heroImg4 from "../assets/images/scroll-up-images/ctpr-hero.png";
 
+import Orb from '../Reactbits/Orbit/Orbit.jsx';
+import Particles from '../Reactbits/Particles/Particles.jsx';
+
+// import ASCIIText from '../Reactbits/ASCIIText/ASCIIText.jsx'
+
 
 const SmoothScrollHero = () => {
     return (
@@ -43,26 +48,28 @@ const SmoothScrollHero = () => {
 
 const Nav = () => {
     return (
-        <nav className="fixed left-0 right-0 top-0 z-50 flex items-center justify-between px-6 py-3 text-white">
-            {/* Replace the icon with the CenterImage */}
-            <motion.div
-                className="w-20 h-20 bg-contain bg-center"
-                style={{
-                    backgroundImage: `url(${signSaheb})`,
-                    filter: "invert(100%)",
-                }}
-            />
-            <button
-                onClick={() => {
-                    document.getElementById("launch-schedule")?.scrollIntoView({
-                        behavior: "smooth",
-                    });
-                }}
-                className="flex items-center gap-1 text-md text-white"
-            >
-                Scroll Down <FiArrowDown />
-            </button>
-        </nav>
+        <>
+            <nav className="fixed left-0 right-0 top-0 z-50 flex items-center justify-between px-6 py-3 text-white">
+                {/* Replace the icon with the CenterImage */}
+                <motion.div
+                    className="w-20 h-20 bg-contain bg-center"
+                    style={{
+                        backgroundImage: `url(${signSaheb})`,
+                        filter: "invert(100%)",
+                    }}
+                />
+                <button
+                    onClick={() => {
+                        document.getElementById("launch-schedule")?.scrollIntoView({
+                            behavior: "smooth",
+                        });
+                    }}
+                    className="flex items-center gap-1 text-md text-white"
+                >
+                    Scroll Down <FiArrowDown />
+                </button>
+            </nav>
+        </>
 
     );
 };
@@ -76,11 +83,38 @@ const Hero = () => {
             className="relative w-full"
         >
             <Nav />
-            <CenterImage />
+            {/* <CenterImage /> */}
 
+
+            <div style={{ width: '100%', height: '600px', position: 'fixed' }}>
+                <Particles
+                    particleColors={['#ffffff', '#ffffff']}
+                    particleCount={200}
+                    particleSpread={10}
+                    speed={0.1}
+                    particleBaseSize={100}
+                    moveParticlesOnHover={true}
+                    alphaParticles={false}
+                    disableRotation={false}
+                />
+            </div>
+            <div style={{ width: '100%', height: '600px', position: 'absolute' }}>
+                <Orb
+                    hoverIntensity={0.5}
+                    rotateOnHover={true}
+                    hue={0}
+                    forceHoverState={false}
+                />
+            </div>
+
+            {/* <ASCIIText
+                text='My Works'
+                enableWaves={true}
+                asciiFontSize={1}
+            /> */}
             <ParallaxImages />
 
-            <div className="absolute bottom-0 left-0 right-0 h-96 bg-gradient-to-b from-zinc-950/0 to-zinc-950" />
+            <div className="relative bottom-0 left-0 right-0 h-96 bg-gradient-to-b from-zinc-950/0 to-zinc-950" />
         </div>
     );
 };
@@ -143,10 +177,10 @@ const CenterImage = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1 }}
                     >
-                        <span style={{fontFamily:"Montserrat"}}>{text}</span>
+                        <span style={{ fontFamily: "Montserrat" }}>{text}</span>
                         <span className="text-accent ml-1">|</span>
                     </motion.h1>
-                    <p style={{fontFamily:"Montserrat"}} className="text-lg">Explore my digital universe</p>
+                    <p style={{ fontFamily: "Montserrat" }} className="text-lg">Explore my digital universe</p>
                 </motion.div>
 
                 <div className="flex justify-center mt-8 gap-6">
@@ -171,7 +205,7 @@ const IconButton = ({ icon, tooltip }) => (
 
 const ParallaxImages = () => {
     return (
-        <div className="mx-auto max-w-5xl px-4 pt-[200px]">
+        <div className="mx-auto max-w-5xl px-4 pt-[900px]">
             <ParallaxImg
                 src={heroImg1}
                 alt="And example of a space launch"

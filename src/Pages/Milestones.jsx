@@ -5,7 +5,7 @@ import HoverImageLinks from '../components/HoverImageLinks'
 const Milestones = () => {
   return (
     <>
-      <div>Milestones</div>
+      {/* <div>Milestones</div> */}
       <HoverImageLinks />
     </>
   )
