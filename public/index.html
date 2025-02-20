@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://i.postimg.cc/9fqYVvxh/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <main>
+        <aside class="sidebar " data-sidebar>
+            <div class="sidebar-info">
+                <figure style="border-radius: 50%;" class="avatar-box">
+                    <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/141474909?v=4"
+                        alt="avatar" width="80">
+                </figure>
+
+                <div class="info-content">
+                    <h1 class="name" title="Mohammad Saheb ul lah">Md. Sahebullah</h1>
+                    <p class="title">Web Developer</p>
+                </div>
+
+                <button class="info-more-btn" data-sidebar-btn>
+                    <span>Display contacts</span>
+                    <ion-icon name="chevron-down"></ion-icon>
+                </button>
+            </div>
+
+            <div class="sidebar-info-more">
+                <div class="separator"></div>
+
+                <ul class="contacts-list">
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Email</p>
+
+                            <a href="mailto:saheb786182@gmail.com" class="contact-link">saheb786182@gmail.com</a>
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="phone-portrait-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Phone</p>
+
+                            <a href="tel:+91 8638232587" class="contact-link">+91 8638232587</a>
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="calendar-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Birthday</p>
+
+                            <time datetime="1982-06-23">January 22, 2003</time>
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="location-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Location</p>
+
+                            <address>Assam, India</address>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="separator"></div>
+
+                <ul class="social-list">
+                    <!-- <li class="social-item"><a href="#" class="social-link"><ion-icon name="logo-facebook"></ion-icon></a></li> -->
+                    <li class="social-item"><a href="https://linkedin.com/in/saheb-ullah-05292a258"
+                            class="social-link"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                    <li class="social-item"><a href="https://twitter.com/SahebUllah3" class="social-link"><ion-icon
+                                name="logo-twitter"></ion-icon></a></li>
+                    <li class="social-item"><a href="https://instagram.com/saheb.ul.lah" class="social-link"><ion-icon
+                                name="logo-instagram"></ion-icon></a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <div class="main-content">
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-item"><button class="navbar-link active" data-nav-link>About</button></li>
+                    <li class="navbar-item"><button class="navbar-link" data-nav-link>Resume</button></li>
+                    <li class="navbar-item"><button class="navbar-link" data-nav-link>Portfolio</button></li>
+                    <!-- <li class="navbar-item"><button class="navbar-link" data-nav-link>Blog</button></li> -->
+                    <li class="navbar-item"><button class="navbar-link" data-nav-link>Contact</button></li>
+                </ul>
+            </nav>
+
+            <article class="about active" data-page="about">
+                <header>
+                    <h2 class="h2 article-title">About me</h2>
+                </header>
+
+                <section class="about-text">
+                    <p>I'm Md Sahebullah, a Full Stack Developer from India, specializing in PHP and MERN Stack. I love
+                        solving complex problems and building efficient, scalable solutions for the web.</p>
+                    <p>My expertise lies in crafting functional and user-friendly platforms, with a focus on real-world
+                        project needs. I aim to deliver solutions that are not only visually appealing but also highly
+                        optimized and impactful.</p>
+
+                </section>
+
+                <section class="service">
+                    <h3 class="h3 service-title">What I'm doing</h3>
+
+                    <ul class="service-list">
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="https://i.postimg.cc/4389jZkP/icon-design.png" alt="icon" width="40">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Web Design</h4>
+                                <p class="service-item-text">Designing user-friendly and responsive interfaces for web
+                                    platforms, focusing on enhancing user experiences.</p>
+                            </div>
+                        </li>
+
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="https://i.postimg.cc/ZqgqrqzG/icon-dev.png" alt="icon" width="40">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Web development</h4>
+                                <p class="service-item-text">Building dynamic web applications using React.js, Next.js,
+                                    Node.js, and PHP, ensuring seamless functionality and performance.</p>
+                            </div>
+                        </li>
+
+                        <!-- <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="https://i.postimg.cc/xjLdzYxZ/icon-app.png" alt="icon" width="40">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Mobile apps</h4>
+                                <p class="service-item-text">Developing scalable mobile-friendly web applications with advanced technologies like React and APIs.</p>
+
+                            </div>
+                        </li> -->
+
+                        <!-- <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="https://i.postimg.cc/0NL8zHpx/icon-photo.png" alt="icon" width="40">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Photography</h4>
+                                <p class="service-item-text">Collaborating on projects requiring high-quality visuals and delivering creative solutions for branding.</p>
+                            </div>
+                        </li> -->
+                    </ul>
+                </section>
+
+                <section class="testimonials">
+                    <h3 class="h3 testimonials-title">Testimonials</h3>
+
+                    <ul class="testimonials-list has-scrollbar">
+
+                        <!-- Testimonial 1 -->
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item>
+                                <figure class="testimonials-avatar-box">
+                                    <img src="https://files.elfsightcdn.com/10f57fcd-29bb-4da4-9c09-61ea49a5bf6e/63dfd52f-f340-4e29-8cb8-11a65a5a79f9/PPP-New-HD.jpg"
+                                        alt="avatar" data-testimonials-avatar width="60" height="60">
+                                </figure>
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Abhilash Boruah, Asst.
+                                    Professor, CSJMC</h4>
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <p>Saheb was entrusted with creating an Alumni Management Portal for our Centre for
+                                        Journalism & Mass Communications. The platform is modern, clean, and features an
+                                        intuitive admin panel, which received a lot of praise from colleagues, alumni,
+                                        and students alike. We are extremely pleased with his work, as he demonstrated
+                                        professionalism, experience, and a strong understanding of client needs.</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- Testimonial 2 -->
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item>
+                                <figure class="testimonials-avatar-box">
+                                    <img src="https://media.licdn.com/dms/image/v2/D5603AQHon0XP3RPrFA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1669224075847?e=1745452800&v=beta&t=RClirbPBwYsfGdUdXJse5EeWMAFTux-74ChjlX7CvNI"
+                                        alt="avatar" data-testimonials-avatar width="60">
+                                </figure>
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>H. K. Sharma, Assam
+                                    Pharmacy Council </h4>
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <p>Saheb developed a comprehensive Journal Management System with a fully functional
+                                        admin panel and streamlined workflows. The process involved multiple iterations
+                                        and three meetings with our faculty panel. Saheb and his team member Kalyan
+                                        consistently implemented the features we requested, ensuring everything was
+                                        completed to perfection. The system is now operational, efficiently handling
+                                        submissions and simplifying the entire workflow.</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- Testimonial 3 -->
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item>
+                                <figure class="testimonials-avatar-box">
+                                    <img src="https://i1.rgstatic.net/ii/profile.image/11431281104196663-1669970403724_Q512/Rizwan-Rehman-2.jpg"
+                                        alt="avatar" data-testimonials-avatar width="60">
+                                </figure>
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Dr. Rizwan Rehman, Asst.
+                                    Professor</h4>
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <p>Saheb created a complete Interns and HR Management System, enabling seamless
+                                        access to all the websites they built (around 15 websites, including Journal
+                                        Management and Alumni Management systems). The system, developed using both MERN
+                                        and PHP stacks, was delivered ahead of schedule and included excellent
+                                        maintenance support for all projects. Along with his teammate Kalyan, Saheb also
+                                        developed the Digital Solutions Cell website, which perfectly manages interns
+                                        and client workflows. The design and functionality are precisely what we needed.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- Testimonial 4 -->
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item>
+                                <figure class="testimonials-avatar-box">
+                                    <img src="https://th.bing.com/th/id/OIP.LDrRCbxQCxm4M1nKHs1WRgHaEK?w=287&h=180&c=7&r=0&o=5&pid=1.7"
+                                        alt="avatar" data-testimonials-avatar width="60">
+                                </figure>
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Aswini Dowerah, Director,
+                                    Salt Brook Academy</h4>
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <p>We approached Saheb and his team to create a comprehensive solution that includes
+                                        modules such as Payroll Management, Recruitment, Employee Welfare, Diversity and
+                                        Inclusion, and Offboarding, among others. They have already delivered several
+                                        completed modules and are currently working on the remaining 14 modules. Their
+                                        progress is impressive, and the team has been highly efficient in ensuring the
+                                        quality and functionality of the deliverables. We look forward to the completion
+                                        of the entire package.</p>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </section>
+
+
+                <div class="modal-container " data-modal-container>
+                    <div class="overlay " data-overlay></div>
+
+                    <section class="testimonials-modal">
+                        <button class="modal-close-btn" data-modal-close-btn><ion-icon
+                                name="close-outline"></ion-icon></button>
+
+                        <div class="modal-img-wrapper">
+                            <figure style="border-radius: 50%;max-width: 60px;max-height: 60px;"
+                                class="modal-avatar-box">
+                                <img style="object-fit: cover;border-radius: 50%;width: 60px;height: 60px;"
+                                    src="https://i.postimg.cc/zGDHfn3G/avatar-1.png" alt="Daniel Lewis" width="80"
+                                    data-modal-img>
+                            </figure>
+
+                            <img src="https://i.postimg.cc/mZ00RwX7/icon-quote.png" alt="quote icon">
+                        </div>
+                        <!-- The below modal's text content are just dummy, do not remove the below html part for modal  -->
+                        <div class="modal-content">
+                            <h4 class="h3 modal-title" data-modal-title>Daniel Lewis</h4>
+                            <time datetime="2023-06-14">14 June, 2023</time>
+
+                            <div class="modal-text" data-modal-text>
+                                <p>Richard was hired to create a corporate identity. It's modern, clean and with a
+                                    beautiful design that got a lot of praises from colleagues and visitors. We were
+                                    very pleased with the work done. He has a lot of experience and is very concerned
+                                    about the needs of client.</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <section class="clients">
+                    <h3 class="h3 clients-title">My Tech Stack</h3>
+
+                    <ul class="clients-list has-scrollbar">
+                        <li class="clients-item">
+                            <a href="#"><img src="https://icon.icepanel.io/Technology/svg/PHP.svg" alt="logo"></a>
+                        </li>
+                        <li class="clients-item">
+                            <a href="#"><img src="https://icon.icepanel.io/Technology/svg/MySQL.svg" alt="logo"></a>
+                        </li>
+                        <li class="clients-item">
+                            <a href="#"><img src="https://icon.icepanel.io/Technology/svg/React.svg" alt="logo"></a>
+                        </li>
+                        
+                        <li class="clients-item">
+                            <a href="#"><img src="https://icon.icepanel.io/Technology/svg/MongoDB.svg" alt="logo"></a>
+                        </li>
+                        <li class="clients-item">
+                            <a href="#"><img src="https://icon.icepanel.io/Technology/svg/Next.js.svg" alt="logo"></a>
+                        </li>
+                        <li class="clients-item">
+                            <a href="#"><img src="https://icon.icepanel.io/Technology/svg/JavaScript.svg" alt="logo"></a>
+                        </li>
+                        <li class="clients-item">
+                            <a href="#"><img src="https://icon.icepanel.io/Technology/svg/Express.svg" alt="logo"></a>
+                        </li>
+                        <li class="clients-item">
+                            <a href="#"><img src="https://icon.icepanel.io/Technology/svg/Node.js.svg" alt="logo"></a>
+                        </li>
+                        <li class="clients-item">
+                            <a href="#"><img src="https://icon.icepanel.io/Technology/svg/Python.svg" alt="logo"></a>
+                        </li>
+                        <li class="clients-item">
+                            <a href="#"><img src="https://icon.icepanel.io/Technology/svg/Java.svg" alt="logo"></a>
+                        </li>
+                        <li class="clients-item">
+                            <a href="#"><img src="https://icon.icepanel.io/Technology/svg/Tailwind-CSS.svg" alt="logo"></a>
+                        </li>
+                    </ul>
+                </section>
+
+            </article>
+
+            <article class="resume " data-page="resume">
+                <header>
+                    <h2 class="h2 article-title">Resume</h2>
+                </header>
+
+                <section class="timeline">
+                    <div class="title-wrapper">
+                        <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
+
+                        <h3 class="h3">Education</h3>
+                    </div>
+
+                    <ol class="timeline-list">
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Dibrugarh University</h4>
+                            <span>Aug 2022 - Aug 2025</span>
+                            <p class="timeline-text">
+                                Currently pursuing a Bachelor of Computer Applications (BCA), focusing on programming
+                                fundamentals, database management, software engineering, and web development. Through
+                                this program, I have cultivated a strong foundation in problem-solving, effective
+                                communication, and collaborative teamwork, preparing me to tackle real-world challenges
+                                in technology.
+                            </p>
+                        </li>
+
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Vivekananda Kendra Vidyalaya, Baragolai</h4>
+                            <span>2020 - 2022</span>
+                            <p class="timeline-text">
+                                Completed my higher secondary education (10+2) in the Science stream (Physics,
+                                Chemistry, Mathematics, and Computer Science). During this period, I gained hands-on
+                                experience in Python programming, MySQL database management, and problem-solving in
+                                computational domains. Although I dedicated a year to preparing for IIT-JEE, the journey
+                                taught me resilience and perseverance.
+                            </p>
+                        </li>
+
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Hill View English High School, Ledo</h4>
+                            <span>2019 pass out</span>
+                            <p class="timeline-text">
+                                Achieved my matriculation with excellent results, earning the prestigious Anundoram
+                                Baruah Award for outstanding academic performance. This milestone instilled in me a
+                                strong commitment to excellence and a passion for continuous learning.
+                            </p>
+                        </li>
+                    </ol>
+                </section>
+
+                <section class="timeline">
+                    <div class="title-wrapper">
+                        <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
+
+                        <h3 class="h3">Experience</h3>
+                    </div>
+
+                    <ol class="timeline-list">
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Software Developer Intern – Digital Solutions Cell,
+                                Dibrugarh</h4>
+                            <span>Jun 2024 - Present</span>
+                            <p class="timeline-text">
+                                Collaborated with a team to develop <strong>13</strong> journal management platforms like
+                                <strong>ctprdu.in</strong>, <strong>mathematical-forum.org</strong>,... optimizing
+                                submission workflows and reducing inefficiencies by 30%. Designed and implemented secure
+                                author submission flows with file uploads and plagiarism checks, increasing compliance
+                                rates by 25%. Delivered over 10 websites for various departments and external clients,
+                                showcasing adaptability and expertise in real-world project execution.
+                            </p>
+                        </li>
+
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Alumni Management System – Project Lead</h4>
+                            <span>Feb 2024 - Apr 2024</span>
+                            <p class="timeline-text">
+                                Built platforms like <strong>csjmcalumni.in</strong> (MERN stack) and
+                                <strong>pharmasocietydu.com</strong> (PHP), enabling seamless alumni-student interaction
+                                through features like event creation, live posts, and chat systems. Designed scalable
+                                database architectures supporting over 500 users, ensuring smooth functionality and
+                                real-time communication.
+                            </p>
+                        </li>
+
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Test Automation Platform – Co-Developer</h4>
+                            <span>Nov 2024</span>
+                            <p class="timeline-text">
+                                Co-developed <strong>Excelitest</strong>, a platform that automates test creation by
+                                converting Excel files into MCQ quizzes with real-time grading. Integrated secure
+                                QR-code-based access, supporting over 500 users. Enhanced platform performance using
+                                React.js and Next.js while streamlining the user experience with Clerk authentication
+                                services.
+                            </p>
+                        </li>
+                    </ol>
+                </section>
+
+                <section class="skill">
+                    <h3 class="h3 skills-title">My Favorites Stacks</h3>
+
+                    <ul class="skills-list content-card">
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">PHP</h5>
+                                <data value="80">80%</data>
+                            </div>
+
+                            <div class="skills-progress-bg">
+                                <div class="skills-progress-fill" style="width: 80%;"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">MERN</h5>
+                                <data value="70">70%</data>
+                            </div>
+
+                            <div class="skills-progress-bg">
+                                <div class="skills-progress-fill" style="width: 70%;"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Next.js</h5>
+                                <data value="70">70%</data>
+                            </div>
+
+                            <div class="skills-progress-bg">
+                                <div class="skills-progress-fill" style="width: 90%;"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">DSA</h5>
+                                <data value="50">50%</data>
+                            </div>
+
+                            <div class="skills-progress-bg">
+                                <div class="skills-progress-fill" style="width: 50%;"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+
+            <article class="portfolio " data-page="portfolio">
+                <header>
+                    <h2 class="h2 article-title">Portfolio</h2>
+                </header>
+
+                <section class="projects">
+                    <ul class="filter-list">
+                      <li class="filter-item"><button class="active" data-filter-btn>All</button></li>
+                      <li class="filter-item"><button data-filter-btn>Journal Management Portal</button></li>
+                      <li class="filter-item"><button data-filter-btn>Alumni Management Portal</button></li>
+                      <li class="filter-item"><button data-filter-btn>Hackathon Assignments</button></li>
+                    </ul>
+                  
+                    <div class="filter-select-box">
+                      <button class="filter-select" data-select>
+                        <div class="select-value" data-select-value>Select Category</div>
+                        <div class="select-icon">
+                          <ion-icon name="chevron-down"></ion-icon>
+                        </div>
+                      </button>
+                  
+                      <ul class="select-list">
+                        <li class="select-item"><button data-select-item>All</button></li>
+                        <li class="select-item"><button data-select-item>Journal Management Portal</button></li>
+                        <li class="select-item"><button data-select-item>Alumni Management Portal</button></li>
+                        <li class="select-item"><button data-select-item>Hackathon Assignments</button></li>
+                      </ul>
+                    </div>
+                  
+                    <ul class="project-list">
+                      <!-- Journal Management Portals -->
+                      <li class="project-item active" data-filter-item data-category="Journal Management Portal">
+                        <a href="https://mathematical-forum.org" target="_blank">
+                          <figure class="project-img">
+                            <div class="project-item-icon-box">
+                              <ion-icon name="eye-outline"></ion-icon>
+                            </div>
+                            <img src="./project-images/mathematical-forum.png" alt="Mathematical Forum" loading="lazy">
+                          </figure>
+                          <h3 class="project-title">Mathematical Forum</h3>
+                          <p class="project-category">Journal Management Portal</p>
+                        </a>
+                      </li>
+                  
+                      <li class="project-item active" data-filter-item data-category="Journal Management Portal">
+                        <a href="https://ctprdu.in" target="_blank">
+                          <figure class="project-img">
+                            <div class="project-item-icon-box">
+                              <ion-icon name="eye-outline"></ion-icon>
+                            </div>
+                            <img src="./project-images/ctprdu.png" alt="CTPRDU" loading="lazy">
+                          </figure>
+                          <h3 class="project-title">CTPRDU</h3>
+                          <p class="project-category">Journal Management Portal</p>
+                        </a>
+                      </li>
+                  
+                      <li class="project-item active" data-filter-item data-category="Journal Management Portal">
+                        <a href="https://aejdu.in" target="_blank">
+                          <figure class="project-img">
+                            <div class="project-item-icon-box">
+                              <ion-icon name="eye-outline"></ion-icon>
+                            </div>
+                            <img src="./project-images/aejdu.png" alt="AEJDU" loading="lazy">
+                          </figure>
+                          <h3 class="project-title">AEJDU</h3>
+                          <p class="project-category">Journal Management Portal</p>
+                        </a>
+                      </li>
+                  
+                      <li class="project-item active" data-filter-item data-category="Journal Management Portal">
+                        <a href="https://dujoedu.in" target="_blank">
+                          <figure class="project-img">
+                            <div class="project-item-icon-box">
+                              <ion-icon name="eye-outline"></ion-icon>
+                            </div>
+                            <img src="./project-images/dujoedu.png" alt="DUJOEDU" loading="lazy">
+                          </figure>
+                          <h3 class="project-title">DUJOEDU</h3>
+                          <p class="project-category">Journal Management Portal</p>
+                        </a>
+                      </li>
+                  
+                      <li class="project-item active" data-filter-item data-category="Journal Management Portal">
+                        <a href="https://www.dujes.co.in" target="_blank">
+                          <figure class="project-img">
+                            <div class="project-item-icon-box">
+                              <ion-icon name="eye-outline"></ion-icon>
+                            </div>
+                            <img src="./project-images/dujes.png" alt="DUJES" loading="lazy">
+                          </figure>
+                          <h3 class="project-title">DUJES</h3>
+                          <p class="project-category">Journal Management Portal</p>
+                        </a>
+                      </li>
+                  
+                      <!-- Alumni Management Portals -->
+                      <li class="project-item active" data-filter-item data-category="Alumni Management Portal">
+                        <a href="https://csjmcalumni.in" target="_blank">
+                          <figure class="project-img">
+                            <div class="project-item-icon-box">
+                              <ion-icon name="eye-outline"></ion-icon>
+                            </div>
+                            <img src="./project-images/csjmc-alumni.png" alt="CSJMC Alumni" loading="lazy">
+                          </figure>
+                          <h3 class="project-title">CSJMC Alumni</h3>
+                          <p class="project-category">Alumni Management Portal</p>
+                        </a>
+                      </li>
+                  
+                      <li class="project-item active" data-filter-item data-category="Alumni Management Portal">
+                        <a href="https://pharmasocietydu.com" target="_blank">
+                          <figure class="project-img">
+                            <div class="project-item-icon-box">
+                              <ion-icon name="eye-outline"></ion-icon>
+                            </div>
+                            <img src="./project-images/pharma-society-du.png" alt="Pharma Society" loading="lazy">
+                          </figure>
+                          <h3 class="project-title">Pharma Society</h3>
+                          <p class="project-category">Alumni Management Portal</p>
+                        </a>
+                      </li>
+                  
+                      <!-- Hackathon Assignments -->
+                      <li class="project-item active" data-filter-item data-category="Hackathon Assignments">
+                        <a href="https://lnkd.in/gYyGkp2u" target="_blank">
+                          <figure class="project-img">
+                            <div class="project-item-icon-box">
+                              <ion-icon name="eye-outline"></ion-icon>
+                            </div>
+                            <img style="height:145px" src="./project-images/urbanhype.png" alt="UrbanHype" loading="lazy">
+                          </figure>
+                          <h3 class="project-title">UrbanHype</h3>
+                          <p class="project-category">Hackathon Assignments</p>
+                        </a>
+                      </li>
+                  
+                      <li class="project-item active" data-filter-item data-category="Hackathon Assignments">
+                        <a href="https://lnkd.in/gAHuVp7G" target="_blank">
+                          <figure class="project-img">
+                            <div class="project-item-icon-box">
+                              <ion-icon name="eye-outline"></ion-icon>
+                            </div>
+                            <img src="./project-images/excelitest.png" alt="Excelitest" loading="lazy">
+                          </figure>
+                          <h3 class="project-title">Excelitest</h3>
+                          <p class="project-category">Hackathon Assignments</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </section>
+                  
+            </article>
+
+            <article class="blog " data-page="blog">
+                <header>
+                    <h2 class="h2 article-title">Blog</h2>
+                </header>
+
+                <section class="blog-posts">
+                    <ul class="blog-posts-list">
+                        <li class="blog-post-item">
+                            <a href="#">
+                                <figure class="blog-banner-box">
+                                    <img src="https://i.postimg.cc/DysCZrWs/blog-1.jpg" alt="Design conferences in 2024"
+                                        loading="lazy">
+                                </figure>
+
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <p class="blog-category">Design</p>
+                                        <span class="dot"></span>
+                                        <time datetime="2024-02-23">Feb 23, 2024</time>
+                                    </div>
+
+                                    <h3 class="h3 blog-item-title">Design conferences in 2024</h3>
+                                    <p class="blog-text">In 2024, several exciting design conferences are set to take
+                                        place, offering opportunities for professionals and enthusiasts to connect,
+                                        learn, and share innovative ideas.</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="blog-post-item">
+                            <a href="#">
+                                <figure class="blog-banner-box">
+                                    <img src="https://i.postimg.cc/QC7qFDMs/blog-2.jpg" alt="Best fonts every designer"
+                                        loading="lazy">
+                                </figure>
+
+
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <p class="blog-category">Design</p>
+                                        <span class="dot"></span>
+                                        <time datetime="2024-01-29">Jan 29, 2024</time>
+                                    </div>
+
+                                    <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+                                    <p class="blog-text">When it comes to typography, choosing the right font is
+                                        essential for effective design. In this article, I'll bring a brief overview of
+                                        some of the best fonts that every designer should consider incorporating into
+                                        their toolkit.</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="blog-post-item">
+                            <a href="#">
+                                <figure class="blog-banner-box">
+                                    <img src="https://i.postimg.cc/W1T71QcL/blog-3.jpg" alt="Design digest #80"
+                                        loading="lazy">
+                                </figure>
+
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <p class="blog-category">Design</p>
+                                        <span class="dot"></span>
+                                        <time datetime="2023-12-20">Dec 20, 2023</time>
+                                    </div>
+
+                                    <h3 class="h3 blog-item-title">Design digest #80</h3>
+                                    <p class="blog-text">Hello, my friends. In this Design Digest, I'll show you a
+                                        curated collection of the latest trends, insights, and innovations in the design
+                                        world. This edition highlights key themes and discussions that are shaping the
+                                        future of design.</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="blog-post-item">
+                            <a href="#">
+                                <figure class="blog-banner-box">
+                                    <img src="https://i.postimg.cc/2S0n8yxh/blog-4.jpg" alt="2023 UI interactions"
+                                        loading="lazy">
+                                </figure>
+
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <p class="blog-category">Design</p>
+                                        <span class="dot"></span>
+                                        <time datetime="2023-11-29">Nov 29, 2023</time>
+                                    </div>
+
+                                    <h3 class="h3 blog-item-title">2023 UI interactions</h3>
+                                    <p class="blog-text">As we move into 2024, 2023 was marked by the rapidly evolution
+                                        of the landscape of UI interactions, driven by advancements in technology and
+                                        user expectations. Dive with me in this text to see the main areas changed in
+                                        this year.</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="blog-post-item">
+                            <a href="#">
+                                <figure class="blog-banner-box">
+                                    <img src="https://i.postimg.cc/YCCmVkw9/blog-5.jpg"
+                                        alt="The forgotten art of spacing" loading="lazy">
+                                </figure>
+
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <p class="blog-category">Design</p>
+                                        <span class="dot"></span>
+                                        <time datetime="2023-11-12">Nov 12, 2023</time>
+                                    </div>
+
+                                    <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+                                    <p class="blog-text">In the realm of design, spacing is often an overlooked yet
+                                        crucial element that can significantly impact the overall aesthetic and
+                                        functionality of a composition. This post will emphasize the importance of white
+                                        space, margins, and padding in creating visually appealing and effective
+                                        designs.</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="blog-post-item">
+                            <a href="#">
+                                <figure class="blog-banner-box">
+                                    <img src="https://i.postimg.cc/zBCBvP16/blog-6.jpg" alt="Design digest #79"
+                                        loading="lazy">
+                                </figure>
+
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <p class="blog-category">Design</p>
+                                        <span class="dot"></span>
+                                        <time datetime="2023-10-20">Oct 20, 2023</time>
+                                    </div>
+
+                                    <h3 class="h3 blog-item-title">Design digest #79</h3>
+                                    <p class="blog-text">Hi, my friends. In this Design Digest I'll focus in the tools
+                                        and resources that we use daily in our projects. Also, I'll include examples of
+                                        software recommendations, online courses, and design communities that foster
+                                        collaboration and learning.</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+
+            <article class="contact " data-page="contact">
+                <header>
+                    <h2 class="h2 article-title">Contact</h2>
+                </header>
+
+                <section class="mapbox" data-mapbox>
+                    <figure>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.6347491405036!2d94.89528137470634!3d27.449491576331315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3740a2daaaaaaaab%3A0x3c0d978a22c76583!2sDibrugarh%20University!5e0!3m2!1sen!2sin!4v1740078522572!5m2!1sen!2sin"
+                            width="400" height="300" loading="lazy"></iframe>
+                    </figure>
+                </section>
+
+                <section class="contact-form">
+                    <h3 class="h3 form-title">Contact Form</h3>
+
+                    <form action="#" class="form" data-form>
+                        <div class="input-wrapper">
+                            <input type="text" name="fullname" class="form-input" placeholder="Full name" required
+                                data-form-input>
+                            <input type="email" name="email" class="form-input" placeholder="Email Address" required
+                                data-form-input>
+                        </div>
+
+                        <textarea name="message" class="form-input" placeholder="Your Message" required
+                            data-form-input=""></textarea>
+
+                        <button class="form-btn" type="submit" disabled data-form-btn>
+                            <ion-icon name="paper-plane"></ion-icon>
+                            <span>Send Message</span>
+                        </button>
+                    </form>
+                </section>
+            </article>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

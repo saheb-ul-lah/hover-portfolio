@@ -99,9 +99,9 @@ function App() {
               <Bio />
               {/* <ParticleRing /> */}
               {/* <SlideTabs />  Always keep it below all adjacent components (otherwise it will be get overlapped by others) */}
-              <div style={{ position: 'fixed', zIndex: 1000, bottom: 20, left: '50%', transform: 'translateX(-50%)' }}>
+              {/* <div style={{ position: 'fixed', zIndex: 1000, bottom: 20, left: '50%', transform: 'translateX(-50%)' }}>
                 <Menu />
-              </div>
+              </div> */}
             </div>
           }
         />
