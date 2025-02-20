@@ -30,7 +30,7 @@ import AwwardsFooter from "./awwardscomponents/awwardsFooter";
 
 function Awwards() {
   return (
-    <main className="relative min-h-screen w-screen overflow-x-hidden">
+    <main className="relative bg-black min-h-screen w-screen overflow-x-hidden">
       <AwwardsNavBar />
       <AwwardsHero />
       <AwwardsAbout />
