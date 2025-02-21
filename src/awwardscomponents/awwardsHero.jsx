@@ -8,6 +8,10 @@ import Button from "./awwardsButton";
 import VideoPreview from "./awwardsVideoPreview";
 
 import Loader from "./awwardsLoader.tsx"
+
+import { Link } from "react-router-dom";
+import "../App.css"
+
 gsap.registerPlugin(ScrollTrigger);
 
 const Hero = () => {
@@ -86,7 +90,7 @@ const Hero = () => {
   return (
     <div className="relative bg-black h-dvh w-screen overflow-x-hidden">
       {loading && (
-        <div className="flex-center absolute z-[100] h-dvh w-screen overflow-hidden bg-white">
+        <div style={{ backgroundColor: "linear-gradient(to bottom right, hsl(240, 1%, 25%) 3%, hsl(0, 0%, 19%) 97%);" }} className="flex-center absolute z-[100] h-dvh w-screen overflow-hidden">
           <Loader />
         </div>
         // <div className="flex-center absolute z-[100] h-dvh w-screen overflow-hidden bg-violet-50">
@@ -173,20 +177,23 @@ const Hero = () => {
             <p
               className="mb-5 text-lg lg:text-2xl max-w-64 font-robert-regular text-blue-100"
               style={{
-                color: "white",
+                
+                fontFamily:"Poppins",
                 textShadow:
-                  "-2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black",
+                  "-1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black",
               }}
             >
               ❄ Unleash creativity, <br /> crafting stunning interfaces ❄
             </p>
 
-            <Button
-              id="watch-trailer"
-              title="Watch trailer"
-              leftIcon={<TiLocationArrow />}
-              containerClass="bg-yellow-300 flex-center gap-1"
-            />
+            <Link to="/bio">
+              <Button
+                id="watch-trailer"
+                title="View Projects"
+                leftIcon={<TiLocationArrow />}
+                containerClass="bg-yellow-300 flex-center gap-1"
+              />
+            </Link>
           </div>
         </div>
       </div>

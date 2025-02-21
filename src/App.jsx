@@ -69,6 +69,27 @@ function App() {
           }
         />
         <Route
+          path="/home"
+          element={
+            <div>
+              {/* <ParticleRing /> */}
+              <Awwards />
+              {/* <Home /> */}
+              {/* <MorphingText /> */}
+              {/* <HoverImageLinks /> */}
+              {/* <VelocityText /> */}
+              {/* <BouncyCardsFeatures /> */}
+              {/* <TextParallaxContent /> */}
+              {/* <SpringModal /> */}
+              {/* <RevealBento /> */}
+              {/* <SlideTabs />  */}
+              <div style={{ position: 'fixed', zIndex: 1000, bottom: 20, left: '50%', transform: 'translateX(-50%)' }}>
+                <Menu />
+              </div>
+            </div>
+          }
+        />
+        <Route
           path="/works"
           element={
             <div>
@@ -95,8 +116,11 @@ function App() {
         <Route
           path="/bio"
           element={
-            <div>
-              <Bio />
+            <div className='min-h-screen w-screen overflow-x-hidden' style={{ background: '#111111' }}>
+              <AwwardsNavBar />
+              <div className="mt-8">
+                <Bio />
+              </div>
               {/* <ParticleRing /> */}
               {/* <SlideTabs />  Always keep it below all adjacent components (otherwise it will be get overlapped by others) */}
               {/* <div style={{ position: 'fixed', zIndex: 1000, bottom: 20, left: '50%', transform: 'translateX(-50%)' }}>

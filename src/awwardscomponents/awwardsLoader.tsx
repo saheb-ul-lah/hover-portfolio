@@ -6,11 +6,11 @@ const Loader = () => {
     <StyledWrapper>
       <div className="card">
         <div className="loader">
-          <p>loading</p>
+          <p>loading </p>
           <div className="words">
+            <span className="word">Images</span>
             <span className="word">Videos</span>
             <span className="word">Animations</span>
-            <span className="word">Images</span>
           </div>
         </div>
       </div>

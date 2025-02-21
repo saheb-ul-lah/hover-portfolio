@@ -1,6 +1,6 @@
 function Bio() {
     return (
-      <div style={{ height: "100vh", width: "100%" }}>
+      <div style={{ height: "100vh", width: "100%", marginTop:"80px" }}>
         <iframe
           src="/index.html"
           title="Portfolio"
